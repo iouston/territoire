@@ -1,0 +1,172 @@
+# Copyright (C) 2017 Mikael Carlavan <contact@mika-carl.fr>
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+#
+# Générique
+#
+
+# Module label 'ModuleFraisTransportName'
+ModuleFraisTransportName = Transportkosten
+# Module description 'ModuleFraisTransportDesc'
+ModuleFraisTransportDesc = Module waarmee transportkosten op offertes en bestellingen kunnen worden ingevoerd
+
+#
+# Export / Import
+#
+ZoneId = Zone-id
+ZoneName = Naam van de zone
+DepartmentId = Id van de provincie
+DepartmentCode = Code van de provincie
+RegionId = Id van de regio
+RegionCode = Code van de regio
+CountryCode = Landcode
+CountryId = Id van het land
+CreationDate = Creatie datum
+AssociatedProduct = Bijbehorend product
+OutOfRange = (waarde) buiten het bereik
+SubjectToFuelTax = Onderworpen aan brandstofbelasting
+Tms = Wijzigingsdatum
+TransporterId = Id vervoerder
+MinWeight = Min. gewicht
+MaxWeight = Max. gewicht
+MinUnit = Gewichtseenheid min.
+MaxUnit = Gewichtseenheid max.
+Amount = Aantal
+ExportFraisTransportZoneDepartement=Zones van de départementen
+ExportFraisTransportZoneRegion=Zones van de regio's
+ExportFraisTransportZonePays=Zones van de landen
+ExportFraisTransportTransporteur = Lijst van vervoerders
+ExportFraisTransportZoneDepartementPoidsTarif = Prijs per gewichtsbereik en per provinciegebied
+ExportFraisTransportZoneRegionPoidsTarif = Prijs per gewichtsbereik en per regio
+ExportFraisTransportZonePaysPoidsTarif = Prijs per gewichtsbereik en per landzone
+ImportFraisTransportTranchesPoidsDepartement = Prijs per gewichtsbereik en per (provincie)gebied
+ImportFraisTransportTranchesPoidsRegion = Prijs per gewichtsgroep en per regio
+ImportFraisTransportTranchesPoidsPays = Prijs per gewichtsbereik en per landzone
+
+#
+# Page d'administration
+#
+FraisTransportSetup = Configuratie van de module
+Settings = Instellingen
+Transporters = Vervoerders
+Zones = Zones
+WeightRanges = Gewicht ranges
+FraisTransportSetupPage = Op deze instellingenpagina's kunt u het beheer van uw transportkosten beter configureren.
+FraisTransportOptions = Opties
+DescTRANSPORTER_ZONES_MODE = Werkwijze van leveringsgebieden
+DescTRANSPORTER_PRODUCT_LABEL = Label van de naam van het product van transportkosten (de naam van de vervoerder wordt samengevoegd met dit label tijdens het maken van het product)
+ConfirmUseDepartments = Wilt u ook de vooraf geregistreerde provincies van het bovenstaande land invoegen?
+ConfirmUseRegions = Wilt u ook de vooraf geregistreerde regio's van het bovenstaande land invoegen?
+ConfirmUsePays = Wilt u ook de vooraf geregistreerde landen invoegen?
+DescUseDepartments = Gebruik de afdelingen als bezorggebieden
+DescUseRegions = Gebruik regio's als bezorggebieden
+DescUsePays  = Gebruik landen als bezorggebieden
+Country = Land
+DescTRANSPORTER_TX_TAX = Percentage toegepast op transportkosten ter compensatie van de volatiliteit van de prijs aan de pomp (prijs van het transport + x%% prijs van het transport). Laat leeg als u geen tarief wilt toepassen
+DescTRANSPORTER_TX_COEF = Coëfficiënt toegepast op transportkosten (marge gerealiseerd op de bruto transportprijs). Laat leeg als u geen coëfficiënt wilt toepassen
+TransporterSubjectToFuelTax = Onderworpen aan brandstofbelasting
+TransporterSubjectToFuelTaxNo = Niet onderworpen aan brandstofbelasting
+TransporterSubjectToFuelTaxYes = Onderworpen aan brandstofbelasting
+CloneLine = Kopieer de regel
+ConfirmCloneLine = Selecteer een vervoerder voor deze nieuwe regel.
+DescUSE_REAL_WEIGHT = Calcul au poids réel
+#
+# Page À propos
+#
+About = About
+FraisTransportAbout = Over de module
+FraisTransportAboutPage = Module pagina
+FraisTransportAboutDescLong = Deze module is ontwikkeld door <a href="http://www.mikael-carlavan.fr">Mikael Carlavan</a> voor <a href="http://www.iouston.com">iouston informatique </a>.<br />De moduledocumentatie is online beschikbaar :<br /><a href="%s">%s</a>
+MaintenanceAndSupportTitle = Onderhoud en support
+MaintenanceAndSupportDescLong = Er wordt geen ondersteuning geboden voor gebruik of installatie. Indien nodig kunnen wij u ondersteunen door de kosten van de interventie te betalen.   <br />Met de aankoop van deze module kunt u gedurende één jaar vanaf de datum van aanschaf correctief onderhoud krijgen. DE <a href="https://iouston.space/gestion/ticketsup/public/">supportaanvragen moeten worden gedaan via ons supportplatform</a>.
+UpdateTitle = Update
+UpdateDescLong = Met de aankoop van deze module kunt u gedurende 1 jaar vanaf de aankoopdatum van de module gratis module-updates krijgen.
+ModulesTitle = Onze andere modules :
+ModulesDescLong = Vind alles <a href="http://www.iouston.com/systeme-gestion-entreprise-dolibarr/modules-dolibarr/">onze andere modules op onze site</a> et sur <a href="https://www.dolistore.com/fr/recherche?controller=search&orderby=position&orderway=desc&search_query=iouston&submit_search=">dolistore</a>.
+IoustonDesc = Dolibarr specialist: Integratie op maat, specifieke ontwikkeling, training, onderhoud.
+
+# ChangeLog
+ChangeLog = ChangeLog
+ChnageLogVersion = Versie
+ChnageLogDate = Datum
+ChnageLogUpdates = Wijzigingen aangebracht
+FirstVersion = Eerste versie
+FraisTransportVersion17022019 = Correction d'un bug empêchant la validation d'un devis
+FraisTransportVersion26062019 = Ajout dans la configuration d'un taux de taxe et d'un coefficient sur le prix du transport
+FraisTransportVersion18092019 = Ajout d'une redirection sur la page courante afin d'éviter les problèmes de rechargement de page
+FraisTransportVersion03102019 = Affiche dans la description du produit frais de transport la zone de livraison retenue
+FraisTransportVersion05122019 = Permet de forcer le prix du transport à 0 pour un transporteur hors tranche
+FraisTransportVersion18032020 = Correction d'un bug lors de la création des transporteurs
+FraisTransportVersion21032020 = Ajout de la gestion par pays
+FraisTransportVersion08042020 = Correction sur l'insertion des frais pour les commandes et ajout complémentaire sur les imports et exports
+FraisTransportVersion18052020 = Correction sur l'export des pays et du taux de TVA lors de l'ajout des frais
+FraisTransportVersion13012021 = Ajout d'une option permettant de calculer les frais proportionnellement poids
+FraisTransportVersion29042021 = Ajout d'un lien entre les transporteurs et les méthodes d'expédition. Mise à jour de la méthode d'expédition de la propale ou commande à la sélection du transporteur
+
+#
+FraisTransportTransporters = Vervoerders
+FraisTransportTransportersPage = Beheerpagina vervoerders
+TransporterLabel = Libellé
+TransporterRef = Referentie
+TransporterProduct = Referentie/Product
+TransporterOutOfRange = Comportement hors tranches
+TransporterTakeMin = Prendre la plus petite tranche
+TransporterDoNotTake = Bewaar deze vervoerder niet
+TransporterTakeMax = Prendre la plus grande tranche
+TransporterForceToZero = Forcer le prix à 0
+PriceForceToZero = Poids hors tranche à renseigner manuellement.<br>Prix forcé à 0€ pour attirer votre attention !
+TransporterProductLabel = Libellé du produit associé
+TransporterActive = État
+#
+FraisTransportZones = Zones
+FraisTransportZonesPage = Zone beheer pagina
+
+
+#
+FraisTransportWeightRanges = Gewicht ranges
+FraisTransportWeightRangesPage = Page de gestion des tranches par poids
+
+#
+ZoneLabel = Libellé
+ZoneCountry = Land
+ZoneActive = État
+
+#
+FraisTransportWeightRanges = Gewicht ranges
+FraisTransportWeightRangesPage = Gewichtsbereik beheer pagina
+WeightRangeTransporter = Transporteur
+WeightRangeZone = Zone
+WeightRangeWeightMin = Min. gewicht
+WeightRangeWeightMax = Max. gewicht
+WeightRangeWeightUnit = Eenheid
+WeightRangeWeightAmount = Bedrag
+WeightRangeWeightActive = État
+WeightRangeWeightReal = Calcul au poids réel
+
+#
+AddFraisTransport = Verzendkosten
+DeliveryZone = Bezorggebied
+SelectDeliveryZone = Selectie van het leveringsgebied
+ConfirmSelectDeliveryZone = Selecteer het bezorggebied.
+
+#
+SelectTransporter = Selecteer een vervoerder
+ConfirmNoTransportersAvailable = Er is geen vervoerder beschikbaar voor dit gebied.
+ConfirmSelectTransporter = Selecteer een vervoerder uit de hierboven beschikbare.
+SelectTransporterDesc = De onderstaande tabel geeft een overzicht van de beschikbare vervoerders in dit gebied en het bedrag dat aan de levering is gekoppeld.
+FraisTransportAdded = De verzendkosten zijn correct bijgeschreven
+#
+ZoneDestination = Bestemming : %s
+DeliveredZone = Voorkeur aflevergebied
