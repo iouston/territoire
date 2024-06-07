@@ -38,7 +38,7 @@ function territoire_prepare_admin_head()
 
 	$head[$h][0] = dol_buildpath("/territoire/admin/setup.php", 1);
 	$head[$h][1] = $langs->trans("localAuthorities");
-	$head[$h][2] = 'localAuthorities';
+	$head[$h][2] = 'settings';
 	$h++;
 
 	$head[$h][0] = dol_buildpath("/territoire/admin/laacctotown.php", 1);

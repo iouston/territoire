@@ -161,7 +161,7 @@ print load_fiche_titre($langs->trans('territoireSetup'), $linkback);
 $head = territoire_prepare_admin_head();
 dol_fiche_head(
     $head,
-    'settings',
+    'townAccordingToLocAuth',
     $langs->trans("ModuleterritoireName"),
     0,
     "territoire@territoire"
@@ -175,7 +175,7 @@ if ($action == 'delete')
 }
 
 // Local Authority According to Town page goes here
-echo $langs->trans("territoireSetupPage");
+echo $langs->trans("territoireTownPage");
 
 print load_fiche_titre($langs->trans("toAddTownToLocAuth"),'','');
 
@@ -279,10 +279,7 @@ if(!empty($search_localauthoritycode))
 
     }
 }
-else
-{
-    dol_print_error($db);
-}
+
 
 //To display the inputs to update a town linked to the chosen local authority:
 if($action == 'editfield')

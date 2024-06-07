@@ -28,7 +28,8 @@ ModuleterritoireDesc = Module permettant d'associer une ville avec son intercomm
 Yes = Oui
 No = Non
 territoireDescription = Module permettant d'associer une ville avec son intercommunalité
-territoireSetupPage = Page de réglages sur les territoires
+territoireSetupPage = Cette page vous permet d'ajouter une nouvelle collectivité de désactiver ou supprimer des collectivités existantes.
+territoireTownPage = Cette page vous permet de lier une ville à une collectivité ou d'afficher la liste des communes par collectivité. Vous pouvez également retirer une commune d'une collectivité depuis cette page.
 territoireOptions = Options concernant les territoires
 territoireSetup = Réglages du module Territoire
 collectiviteList = Liste de toutes les collectivités
@@ -78,13 +79,14 @@ cityzip = Nom de la ville + CP
 About = À propos
 territoireAbout = À propos du module
 territoireAboutPage = Page à propos du module
-territoireAboutDescLong = Ce module a été développé par Julien Marchand pour <a href="http://www.iouston.com">iouston informatique </a>.La documentation du module est disponible en ligne : <a href="%s">%s</a>
+territoireAboutDescLong = Ce module a été développé par Julien Marchand pour <a href="http://www.iouston.com">iouston informatique </a>. La documentation du module est disponible en ligne : <a href="%s">%s</a>
 MaintenanceAndSupportTitle = Maintenance et support
 MaintenanceAndSupportDescLong = Aucun support à l'utilisation ou à l'installation n'est fourni. Si besoin, nous pouvons vous accompagner moyennant la prise en charge par vos soins du coût de l’intervention. L'achat de ce module vous permet d'obtenir une maintenance corrective durant un an à compter de la date d'acquisition. Les <a href="https://iouston.space/gestion/ticketsup/public/">demandes de support doivent être réalisées via notre plateforme de support</a>.
 UpdateTitle = Mise à jour
 UpdateDescLong = L'achat de ce module vous permet d'obtenir gratuitement les mises à jour du module pendant 1 an à compter de la date d’achat du module.
 ModulesTitle = Nos autres modules :
-ModulesDescLong = Retrouvez tous <a href="http://www.iouston.com/systeme-gestion-entreprise-dolibarr/modules-dolibarr/">nos autres modules sur notre site</a> et sur <a href="https://www.dolistore.com/fr/recherche?controller=search&orderby=position&orderway=desc&search_query=iouston&submit_search=">dolistore</a>.
+ModulesDescLong = Retrouvez tous <a href
+="http://www.iouston.com/systeme-gestion-entreprise-dolibarr/modules-dolibarr/">nos autres modules sur notre site</a> et sur <a href="https://www.dolistore.com/fr/recherche?controller=search&orderby=position&orderway=desc&search_query=iouston&submit_search=">dolistore</a>.
 IoustonDesc = Spécialiste dolibarr : Intégration sur mesure, développement spécifique, formation, maintenance.
 
 

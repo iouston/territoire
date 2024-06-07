@@ -46,7 +46,7 @@ if (! $user->admin) {
 }
 
 $versions = array(
-	array('version' => '1.0.0', 'date' => '12/04/2018', 'updates' => $langs->trans('FirstVersion'))
+	array('version' => '1.0.0', 'date' => '07/06/2024', 'updates' => $langs->trans('FirstVersion'))
 );
 
 /*
@@ -74,9 +74,9 @@ dol_fiche_head(
 // About page goes here
 echo $langs->trans("territoireAboutPage");
 
-echo '<br />';
+echo '<br>';
 
-$url = 'http://www.iouston.com/systeme-gestion-entreprise-dolibarr/modules-dolibarr/module-dolibarr-frais-transport';
+$url = 'http://www.iouston.com/module-dolibarr/territoires/';
 
 print '<h2>'.$langs->trans("About").'</h2>';
 print $langs->trans("territoireAboutDescLong", $url, $url);
@@ -90,7 +90,7 @@ print $langs->trans("UpdateDescLong");
 print '<h2>'.$langs->trans("ModulesTitle").'</h2>';
 print $langs->trans("ModulesDescLong");
 
-echo '<br />';
+echo '<br>';
 
 print '<a href="http://www.dolistore.com">'.img_picto('dolistore', dol_buildpath('/territoire/img/dolistore.png', 1), '', 1).'</a>';
 
@@ -98,7 +98,7 @@ print '<hr />';
 
 print '<a href="http://www.iouston.com">'.img_picto('iouston', dol_buildpath('/territoire/img/iouston.png', 1), '', 1).'</a>';
 
-echo '<br />';
+echo '<br>';
 
 print $langs->trans("IoustonDesc");
 
