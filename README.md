@@ -1,2 +1,2 @@
-# fraistransport
-Module permettant d'insérer des frais de transport sur les devis et commandes
+# territoire
+Module permettant d'associer une ville à son intercommunalité

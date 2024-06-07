@@ -16,13 +16,10 @@
  */
 
 /**
- *  \file       htdocs/attestationtva/class/actions_attestationtva.class.php
- *  \ingroup    attestationtva
+ *  \file       htdocs/territoire/class/actions_territoire.class.php
+ *  \ingroup    territoire
  *  \brief      File of class to manage actions on propal
  */
-// require_once DOL_DOCUMENT_ROOT.'/core/class/commonobject.class.php';
-// require_once DOL_DOCUMENT_ROOT.'/product/class/product.class.php';
-// dol_include_once('/attestationtva/class/attestationtva.class.php');
 
 class ActionsTerritoire
 { 
@@ -34,6 +31,7 @@ class ActionsTerritoire
 		$soc = new Societe($db);
 		$soc->fetch(GETPOST('socid','int'));
 
+		//To search for the local authority ("intercommunalité"):
 		$sql = "SELECT z.code, z.zip, z.town, cpv.fk_code, cpv.fk_localauthoritycode, c.localauthoritycode, c.localauthorityname ";
 		$sql .= "FROM llx_c_ziptown as z ";
 		$sql .= "INNER JOIN llx_c_territoire_collecparville as cpv ";
@@ -44,10 +42,11 @@ class ActionsTerritoire
 
 	 	$resql = $db->query($sql);
 
-	 	$obj = $db->fetch_object($resql); 
+	 	$obj = $db->fetch_object($resql); 	
 
+	 	//To display the local authority ("intercommunalité"):
 		$this->resprints = '';
-		$object=$object. '</br>' . $obj->localauthorityname;
+		$object=$object. ' | <b>' . $obj->localauthorityname.'</b>';
 
 		return 0;
 	}
