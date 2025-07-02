@@ -38,7 +38,10 @@ class ActionsTerritoire
 		$sql .= "ON cpv.fk_code = z.code ";
 	 	$sql .= "INNER JOIN llx_c_territoire_collectivites as c ";
 	 	$sql .= "ON c.localauthoritycode = cpv.fk_localauthoritycode ";
-	 	$sql .= "WHERE z.town = '". $soc->town . "'"; 
+	 	$sql .= "WHERE z.town = '". $soc->town . "'";
+	 	if(!empty($soc->zip)){
+	 	    $sql .= "AND z.zip = '". $soc->zip . "'";
+	 	} 
 
 	 	$resql = $db->query($sql);
 
