@@ -1301,3 +1301,13 @@ ALTER TABLE `llx_c_territoire_collectivites`
 ALTER TABLE `llx_c_territoire_collectivites`
   MODIFY `rowid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1256;
 COMMIT;
+
+
+--
+-- Ajout d'index pour optimiser la requete dans son utilisation
+--
+CREATE INDEX idx_ziptown_town ON llx_c_ziptown(town);
+CREATE INDEX idx_cpv_fk_code ON llx_c_territoire_collecparville(fk_code);
+CREATE INDEX idx_cpv_fk_localauthoritycode ON llx_c_territoire_collecparville(fk_localauthoritycode);
+CREATE INDEX idx_c_localauthoritycode ON llx_c_territoire_collectivites(localauthoritycode);
+CREATE INDEX idx_ziptown_town_code ON llx_c_ziptown(town, code);
